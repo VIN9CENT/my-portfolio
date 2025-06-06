@@ -4,7 +4,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="w-full bg-[#cbfbf1] text-blue-700 p-4 fixed top-0">
+    <header className="w-full mb-6 bg-[#cbfbf1] text-blue-700 p-4 fixed top-0 z-50">
       <div className="flex justify-between items-center">
         <h1 className="text-2xl font-bold">Vincent Ochieng</h1>
         <button

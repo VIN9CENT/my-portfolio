@@ -11,7 +11,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="w-full h-screen font-serif bg-gradient-to-r from-blue-500 to-green-500 flex flex-col lg:flex-row justify-between items-center overflow-hidden px-4">
+      <div className="w-full min-h-screen pt-24 sm:pt-28 font-serif bg-gradient-to-r from-blue-500 to-green-500 flex flex-col lg:flex-row justify-between items-center overflow-hidden px-4" >
         <div className="max-w-xs ml-6 sm:max-w-sm md:max-w-md lg:max-w-lg w-full h-auto">
           <img
             src={jefferson}
@@ -49,8 +49,10 @@ const Hero = () => {
               Let's Build Something Awesome
             </h2>
             <p className="max-w-96 p-2 text-lg text-stone-800">
-              Whether it's a <span className='text-rose-600'> rough idea </span> or a <span className='text-rose-600'>detailed plan</span>, I’m here to help you bring it to life.
-              Let's team up and make something amazing.
+              Whether it's a <span className="text-rose-600"> rough idea </span>{" "}
+              or a <span className="text-rose-600">detailed plan</span>, I’m
+              here to help you bring it to life. Let's team up and make
+              something amazing.
             </p>
           </div>
         </div>
