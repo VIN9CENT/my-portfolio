@@ -24,6 +24,7 @@ export const projects = [
   title: "Lost and Found App",
   description: "A web application to help users report and find lost items.",
   image: ben,
+  link: "https://lost-and-found-app.com"
 },
 {
   id: 3,
