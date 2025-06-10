@@ -7,14 +7,16 @@ const Footer = () => {
     <footer>
       <section
         id="contacts"
-        className="bg-gray-900 text-gray-300 py-8 px-6 mt-12"
+        className="bg-gray-900 text-gray-300 py-16 px-6 mt-20"
       >
-        <div className="max-w-6xl mx-auto text-center mb-8">
-          <h1 className="text-2xl font-bold">Contact Me</h1>
-          <p className="text-lg">Feel free to reach out through any of the platforms below:</p>
+        <div className="max-w-6xl mx-auto text-center mb-10 px-4">
+          <h1 className="text-3xl font-bold mb-4">Contact Me</h1>
+          <p className="text-lg">
+            Feel free to reach out through any of the platforms below:
+          </p>
         </div>
-        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0">
-          <div className="text-sm">
+        <div className="max-w-6xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6 px-4">
+          <div className="text-sm text-gray-400">
             &copy; {new Date().getFullYear()} Vincent Ochieng. All rights
             reserved.
           </div>
