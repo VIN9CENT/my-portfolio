@@ -57,7 +57,7 @@ const Header = () => {
           <ul className="flex space-x-4">
             <li>
               <Link
-                to="about"
+                to="about-me"
                 smooth={true}
                 offset={-100}
                 duration={500}
@@ -66,6 +66,32 @@ const Header = () => {
                 className={navLinkClass}
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="why-me"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
+              >
+                Why Me
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="skills"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
+              >
+                Skills
               </Link>
             </li>
             <li>
