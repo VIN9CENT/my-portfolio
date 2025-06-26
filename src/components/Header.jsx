@@ -1,15 +1,32 @@
 import React, { useState } from "react";
+import { Link } from "react-scroll";
+import logo from "../images/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navLinkClass =
+    "cursor-pointer hover:bg-amber-300 hover:text-[#180e2a] transition px-2 py-1 rounded";
+  const activeClass = "bg-amber-300 text-[#180e2a]";
 
   return (
-    <header className="w-full mb-6 bg-[#cbfbf1] text-blue-700 p-4 fixed top-0 z-50">
+    <header className="w-full mb-6 bg-[#180e2a] text-white p-4 fixed top-0 z-50">
       <div className="flex justify-between items-center">
-        <h1 className="text-2xl font-bold">Vincent Ochieng</h1>
+        <Link
+          to="hero"
+          smooth={true}
+          duration={500}
+          className="cursor-pointer flex items-center"
+        >
+          <img
+            src={logo}
+            alt="logo"
+            className="h-10 w-auto object-contain"
+          />
+        </Link>
+
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-blue-700 focus:outline-none"
+          className="md:hidden text-white focus:outline-none"
         >
           <svg
             className="w-6 h-6"
@@ -39,58 +56,92 @@ const Header = () => {
         <nav className="hidden md:block">
           <ul className="flex space-x-4">
             <li>
-              <a
-                href="#about"
-                className="hover:bg-blue-700 hover:text-white transition px-2 py-1 rounded"
+              <Link
+                to="about"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
-                className="hover:bg-blue-700 hover:text-white transition px-2 py-1 rounded"
+              <Link
+                to="projects"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contacts"
-                className="hover:bg-blue-700 hover:text-white transition px-2 py-1 rounded"
+              <Link
+                to="contacts"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
               >
                 Contacts
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
       </div>
+
       {isOpen && (
         <nav className="md:hidden mt-4">
           <ul className="flex flex-col space-y-2">
             <li>
-              <a
-                href="#about"
-                className="block hover:bg-blue-700 hover:text-white transition px-2 py-1 rounded"
+              <Link
+                to="about"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
+                onClick={() => setIsOpen(false)}
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#projects"
-                className="block hover:bg-blue-700 hover:text-white transition px-2 py-1 rounded"
+              <Link
+                to="projects"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
+                onClick={() => setIsOpen(false)}
               >
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#contacts"
-                className="block hover:bg-blue-700 hover:text-white transition px-2 py-1 rounded"
+              <Link
+                to="contacts"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
+                onClick={() => setIsOpen(false)}
               >
                 Contacts
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
