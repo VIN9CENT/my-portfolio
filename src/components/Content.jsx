@@ -83,7 +83,7 @@ const Content = () => {
             <img
               src={jefferson}
               className="w-40 h-40 rounded-full object-cover border-gray-500 shadow-lg"
-              aria-label="profile picture"
+              alt="Profile"
             />
             <p className="text-lg font-light max-w-3xl">
               I'm a passionate developer who enjoys transforming ideas into
@@ -99,7 +99,7 @@ const Content = () => {
       <section
         id="why-me"
         aria-label="Why choose me"
-        className="bg-[#180e2a] h-screen px-6 flex items-center"
+        className="bg-[#180e2a] px-6 py-20"
       >
         <div className="flex flex-col md:flex-row font-sans justify-start items-start gap-10 max-w-7xl mx-auto w-full">
           <div className="flex-1">
