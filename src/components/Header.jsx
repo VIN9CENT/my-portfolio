@@ -129,7 +129,7 @@ const Header = () => {
           <ul className="flex flex-col space-y-2">
             <li>
               <Link
-                to="about"
+                to="about-me"
                 smooth={true}
                 offset={-100}
                 duration={500}
@@ -139,6 +139,34 @@ const Header = () => {
                 onClick={() => setIsOpen(false)}
               >
                 About
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="why-me"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
+                onClick={() => setIsOpen(false)}
+              >
+                Why Me
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="skills"
+                smooth={true}
+                offset={-100}
+                duration={500}
+                spy={true}
+                activeClass={activeClass}
+                className={navLinkClass}
+                onClick={() => setIsOpen(false)}
+              >
+                Skills
               </Link>
             </li>
             <li>
