@@ -113,7 +113,7 @@ const Content = () => {
               <h2 className="font-bold text-amber-300 text-lg mb-3">
                 5 Star Experience
               </h2>
-              <p className="font-light text-white">
+              <p className="font-light line-clamp-3 text-white">
                 I have 5 star experience in crafting highly scalable solutions
                 for different industries, having been in the field for close to
                 a decade.
@@ -123,7 +123,7 @@ const Content = () => {
               <h2 className="font-bold text-amber-300 text-lg mb-3">
                 Track Record
               </h2>
-              <p className="text-white font-light">
+              <p className="text-white line-clamp-3 font-light">
                 I have a proven track record of delivering high-quality projects
                 on time and within budget, ensuring client satisfaction and
                 long-term partnerships.
@@ -133,7 +133,7 @@ const Content = () => {
               <h2 className="font-bold text-lg text-amber-300 mb-3">
                 Client Oriented
               </h2>
-              <p className="font-light text-white">
+              <p className="font-light line-clamp-3 text-white">
                 I prioritize client needs and work closely with them to ensure
                 the final product meets their expectations and business goals.
               </p>
@@ -142,7 +142,7 @@ const Content = () => {
               <h2 className="font-bold text-lg text-amber-300 mb-3">
                 Long-term Support
               </h2>
-              <p className="font-light text-white">
+              <p className="font-light line-clamp-3 text-white">
                 I offer ongoing support and maintenance to ensure your project
                 remains up-to-date, secure, and functional for the long term.
               </p>
