@@ -1,40 +1,22 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { MdOutlineMail, MdPhone, MdLocationOn } from "react-icons/md";
 
 const Contact = () => {
-  const [submitted, setSubmitted] = useState(false);
-
-  useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
-    if (params.get("submitted") === "true") {
-      setSubmitted(true);
-    }
-  }, []);
+  
 
   return (
     <section id="contacts" className="bg-[#180e2a] p-8 rounded-lg shadow-md">
       <div className="max-w-5xl mx-auto flex flex-col lg:flex-row gap-8">
         <div className="flex-1">
-          {submitted && (
-            <div className="mb-4 p-4 bg-green-700 text-white rounded text-center">
-              Message sent successfully!
-            </div>
-          )}
           <h2 className="text-3xl text-amber-300 font-bold mb-2">Contact Me</h2>
           <p className="text-white mb-6">Leave me a message</p>
           <form
             action="https://formsubmit.co/ookovincent616@gmail.com"
             method="POST"
             className="space-y-4"
-          >
-            <input type="hidden" name="_captcha" value="false" />
-            <input
-              type="hidden"
-              name="_next"
-              value="https://vincent-ochieng.netlify.app/?submitted=true"
-            />
-            <div>
-              <label htmlFor="name" className="block text-white mb-1">
+          >         
+            <div>     
+              <label  htmlFor="name" className="block text-white mb-1">
                 Name
               </label>
               <input
